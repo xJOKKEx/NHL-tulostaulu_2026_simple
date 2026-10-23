@@ -1,0 +1,442 @@
+<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>NHL-kauden avajaiset 2026 – Tulostaulu V3</title>
+<style>
+:root{color-scheme:dark;--gold:#f6cf78;--ink:#f8f8fa;--muted:#c3cad5;--border:#93702e}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#253851 0%,#0b1523 42%,#04070c 95%);font-family:system-ui,Arial,sans-serif;color:var(--ink);min-height:100vh}button,input{font:inherit}button{cursor:pointer;border:1px solid #a38952;color:#f8e3b0;background:linear-gradient(#252e3b,#101720);border-radius:12px;padding:10px 15px;font-weight:750}button:hover{filter:brightness(1.17)}button:disabled{opacity:.45;cursor:default}.wrap{max-width:1850px;margin:auto;padding:18px 22px 32px}.top{text-align:center;position:relative;margin:0 0 17px;padding:6px 0 12px}.top h1{font-size:clamp(31px,4vw,66px);color:var(--gold);letter-spacing:-.04em;text-shadow:0 2px #51281c,0 6px 20px #000;margin:3px 0}.top p{margin:0;color:#e7d6b5}.top-actions{display:flex;justify-content:center;gap:10px;margin-top:15px;flex-wrap:wrap}.boards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.game{background:linear-gradient(155deg,#121d2bfa,#070c14fa);border:2px solid #a78545;border-radius:24px;padding:18px;box-shadow:0 15px 35px #0009;min-width:0}.game-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;color:var(--gold)}.game-head h2{margin:0;font-size:clamp(22px,2.1vw,34px)}.rink-label{border:1px solid #75613d;border-radius:99px;padding:5px 11px;font-size:12px}.score-board{display:grid;grid-template-columns:minmax(0,1fr) 155px minmax(0,1fr);gap:10px;align-items:stretch}.team{display:flex;flex-direction:column;align-items:center;gap:10px;min-width:0;text-align:center;background:#0a1321;border:1px solid #34415a;border-radius:18px;padding:12px 6px}.logo{width:min(11vw,155px);max-width:100%;aspect-ratio:1/1;border-radius:15px;border:1px solid #7c6846;background:#111a27;display:grid;place-items:center;overflow:hidden;font-size:56px}.logo img{max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain}.team-name{font-weight:850;font-size:clamp(15px,1.6vw,24px);overflow-wrap:anywhere;line-height:1.15}.score-section{display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:12px;text-align:center}.score{color:var(--gold);font-weight:950;font-variant-numeric:tabular-nums;font-size:clamp(36px,4.6vw,78px);text-shadow:0 3px 14px #000}.scbuttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}.scbuttons button{font-size:clamp(28px,3vw,45px);padding:9px 0;min-height:76px;border-radius:14px;color:white}.plus{background:linear-gradient(#16965a,#08713f);border-color:#46c98d}.minus{background:linear-gradient(#9b3434,#651b23);border-color:#d07c81}.scbuttons span{font-size:12px;display:block;color:#fff}.timer-section{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.timer{background:#060d17;border:1px solid #706044;border-radius:17px;padding:12px;text-align:center;min-width:0}.timer-title{color:#e7c875;font-weight:850;margin-bottom:6px}.clock{font:900 clamp(27px,3.1vw,50px)/1.3 ui-monospace,monospace;color:#fff7da;font-variant-numeric:tabular-nums}.timer-actions{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:10px 0 0}.timer-actions button{padding:8px 9px;font-size:13px}.timer-actions .run{background:#185f46;color:#fff}.timer-set{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;color:#bbc9d8;font-size:12px}.timer-set input{width:56px;padding:7px 3px;border:1px solid #67708b;border-radius:8px;background:#101f31;color:white;text-align:center}.timer-set button{padding:7px 8px;font-size:12px}.status{font-size:11px;color:#afc6e7;min-height:1.1em;margin-top:4px}.notice{max-width:1150px;margin:19px auto 0;text-align:center;color:#bdc8d8;font-size:13px}dialog{width:min(820px,calc(100vw - 24px));max-height:90vh;overflow:auto;background:#0c1725;color:white;border:1px solid #a98c55;border-radius:22px;padding:22px;box-shadow:0 25px 70px #000b}dialog::backdrop{background:#02050bc7}dialog h2{color:var(--gold);margin:0 0 10px}.dialog-top{display:flex;justify-content:space-between;align-items:center;gap:14px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.setting-card{background:#152134;border:1px solid #42516b;padding:13px;border-radius:14px}.setting-card label{display:block;margin:8px 0;font-weight:750}.setting-card input[type=text]{width:100%;padding:10px;border:1px solid #788398;border-radius:9px;background:#07111e;color:#fff}.setting-card img{width:70px;height:70px;object-fit:contain;background:#060a10}.setting-card input[type=file]{width:100%;font-size:12px;margin-top:8px}.options{display:flex;gap:15px;flex-wrap:wrap;margin:17px 0}.options label{display:flex;align-items:center;gap:8px}.history-row{display:grid;grid-template-columns:minmax(0,1fr) 80px 80px auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid #32445a}.history-row input{width:100%;padding:8px 4px;text-align:center;border:1px solid #697488;border-radius:8px;background:#091323;color:white}.history-row strong{color:#f4da92}.small{font-size:12px;color:#c2cfdd}.danger{background:#832f35;border-color:#c16c76;color:white}.message{font-size:12px;color:#e9d4a3;min-height:1.3em;margin:10px 0}.footer-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.goal-flash{animation:glow .7s ease-out}@keyframes glow{0%,100%{box-shadow:0 15px 35px #0009}35%{box-shadow:0 0 35px #eabb56a9}}@media(max-width:1130px){.boards{grid-template-columns:1fr}.logo{width:min(25vw,175px)}.score-board{grid-template-columns:minmax(0,1fr) 180px minmax(0,1fr)}}@media(max-width:640px){.wrap{padding:12px}.game{padding:12px}.score-board{grid-template-columns:minmax(0,1fr) 110px minmax(0,1fr);gap:5px}.logo{width:min(25vw,110px);font-size:35px}.scbuttons button{min-height:56px}.timer-section,.fields{grid-template-columns:1fr}.history-row{grid-template-columns:1fr 55px 55px auto;gap:5px}.history-row button{padding:7px}}
+
+.team-picker{cursor:pointer;position:relative;width:100%;border:1px solid #c39a43;min-height:116px;padding:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:rgba(0,0,0,.2)}
+.team-picker .select-hint{font-size:12px;color:#f0cf83}.team-picker .logo{border:0}.team-picker>span:first-child{display:flex;align-items:center;justify-content:center;width:100%;height:90px;font-size:46px}.team-picker img{width:100%;height:100%;object-fit:contain}.team-select{width:100%;position:relative;z-index:9;background:#111a29;color:white;border:2px solid #d8a951;padding:8px;font-size:15px}.team-select[hidden]{display:none}
+.scbuttons button{font-size:clamp(26px,4vw,52px)!important;min-height:66px!important}.scbuttons button span{display:none!important}.score{font-size:clamp(50px,6vw,88px)!important}.timer-section{grid-template-columns:1fr!important}.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.setting-card input[type=text]{width:100%;margin:4px 0 7px}.setting-card h4{margin:3px 0 9px;color:#f0c96a}.game-head h2{overflow-wrap:anywhere}
+.team{position:relative!important}.team-select{position:absolute!important;left:0!important;top:0!important;width:100%!important;height:116px!important;opacity:0!important;z-index:20!important;cursor:pointer!important}.team-picker{pointer-events:none!important}.team-select:focus-visible{opacity:1!important}
+
+/* Responsive TV-oriented compact scoreboard */
+@media(min-width:1121px){
+ html,body{height:100%;overflow:hidden}
+ .wrap{height:100dvh;display:flex;flex-direction:column;padding:clamp(7px,1.15vh,16px) clamp(12px,1.25vw,22px) !important;gap:clamp(6px,1vh,12px)}
+ .top{flex:none;margin:0 !important;padding:0 !important}
+ .top h1{font-size:clamp(27px,3.3vh,46px) !important;margin:0 !important}
+ .top p{font-size:12px}.top-actions{margin-top:5px !important}
+ .top-actions button{padding:7px 13px !important}
+ .boards{flex:1;min-height:0;align-items:stretch;gap:clamp(9px,1vw,17px)}
+ .game{display:flex;flex-direction:column;gap:clamp(6px,1.2vh,14px);padding:clamp(9px,1.1vh,16px) !important;min-height:0}
+ .game-head{margin:0 !important}
+ .score-board{flex:1;min-height:0;grid-template-columns:minmax(0,.82fr) minmax(185px,1.12fr) minmax(0,.82fr) !important;gap:clamp(5px,.6vw,10px)}
+ .team{padding:clamp(5px,.7vh,10px) 4px !important;gap:5px !important;justify-content:center}
+ .team-picker{height:auto;min-height:0 !important;flex:1;max-height:clamp(118px,23vh,245px);padding:5px !important}
+ .team-picker>span:first-child{height:100% !important;max-height:100%}
+ .team-name{font-size:clamp(14px,1.8vh,24px) !important}
+ .score{font-size:clamp(57px,8.3vh,108px) !important;white-space:nowrap}
+ .scbuttons{gap:8px !important}
+ .scbuttons button{height:clamp(72px,11vh,126px);font-size:clamp(38px,5.4vh,66px) !important;border-radius:13px}
+ .timer-section{margin:0 !important;flex:none}
+ .timer{padding:clamp(6px,.7vh,12px) !important}
+ .clock{font-size:clamp(40px,5.4vh,66px) !important;line-height:1 !important}
+ .timer-title{margin:0 !important}
+ .timer-actions{margin:5px 0 0 !important}
+ .timer-actions .run{min-height:48px !important;min-width:160px !important;font-size:clamp(16px,2vh,23px) !important;padding:7px 15px !important}
+ .timer-actions button:not(.run){min-height:45px !important;font-size:16px !important}
+ .timer-set{margin-top:4px !important}
+ .save-inside{flex:none;text-align:center}
+ .save-inside button{width:min(100%,290px);padding:7px 10px !important;font-size:13px !important}
+ .notice{flex:none;margin:0 !important;font-size:11px !important;line-height:1.1}
+}
+@media(max-width:1120px){
+ .save-inside{display:flex;justify-content:center;margin-top:12px}
+ .save-inside button{padding:11px 16px}
+ .score-board{grid-template-columns:minmax(0,.82fr) minmax(140px,1.08fr) minmax(0,.82fr)}
+ .score{font-size:clamp(57px,7vw,99px) !important}
+ .scbuttons button{min-height:80px !important;font-size:clamp(34px,5vw,60px) !important}
+ .clock{font-size:clamp(43px,6vw,74px) !important}
+ .timer-actions .run{font-size:20px !important;min-height:56px !important;padding:10px 18px !important}
+}
+.team-picker{width:100%;position:relative;min-width:0;cursor:pointer !important;}
+.team-picker .select-hint{position:absolute !important;top:50%;left:50%;transform:translate(-50%,-50%);padding:7px 12px;background:#070d18d9;border:1px solid #e6b65b;border-radius:999px;font-size:clamp(11px,1vw,15px);pointer-events:none;opacity:0;transition:opacity .15s}
+.team-picker:hover .select-hint,.team-picker:focus-visible .select-hint{opacity:1}
+.team-picker img{width:100% !important;height:100% !important;object-fit:contain !important}
+.team-select{pointer-events:none !important;opacity:0 !important;position:absolute !important;width:1px !important;height:1px !important;left:50% !important;top:50% !important;padding:0 !important;border:0 !important}
+.team-select.picker-open{pointer-events:auto !important;opacity:1 !important;position:absolute !important;width:min(250px,90%) !important;height:46px !important;left:5% !important;top:38% !important;padding:6px !important;border:2px solid #dfb85e !important;background:#091523 !important;z-index:50 !important}
+@media(max-width:640px){.scbuttons button{min-height:66px !important}.timer-actions .run{font-size:18px !important}.score-board{grid-template-columns:minmax(0,.8fr) minmax(110px,1.08fr) minmax(0,.8fr) !important}}
+
+/* Version 2: goal lights, five player scorers, game elapsed clock */
+.goal-light{height:12px;width:84%;flex:none;border-radius:100px;display:block;margin:0 auto 3px;background:linear-gradient(90deg,#400308,#ec2020,#6f0709);box-shadow:0 0 7px #d0181866;border:1px solid #9e2626}
+.goal-light.goal-active{animation:goalLamp .22s linear 12 alternate}
+@keyframes goalLamp{from{background:#450306;box-shadow:0 0 3px #290104}to{background:#ff3535;box-shadow:0 0 24px #f41b1b,0 0 48px #ff2424}}
+.team-picker{pointer-events:auto!important;cursor:pointer!important;min-height:65px}
+.team-select{pointer-events:none!important}
+.team-select.picker-open{pointer-events:auto!important;width:min(260px,95%)!important;left:2.5%!important;height:auto!important;min-height:46px!important;opacity:1!important}
+.player-list{display:grid;gap:3px;width:100%;margin-top:3px}
+.player-row{display:grid;grid-template-columns:minmax(0,1fr) 26px 18px 26px;align-items:center;gap:2px;background:#050d18bb;border:1px solid #ffffff15;border-radius:7px;padding:2px 3px}
+.player-label{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:clamp(10px,.82vw,13px);text-align:left}
+.player-row button{padding:1px 0!important;min-height:26px!important;font-size:17px!important;border-radius:6px}
+.player-row b{font-size:13px;font-variant-numeric:tabular-nums}
+.played-time{font-size:clamp(12px,1.13vw,16px);color:#f0d58e;margin-top:4px}
+.stats-table{border-collapse:collapse;width:100%;margin-top:14px}.stats-table td,.stats-table th{padding:7px 8px;border-bottom:1px solid #4c5b6c;text-align:left}.stats-table th{color:#f1ca72}.stats-table tr:nth-child(even){background:#ffffff0a}
+@media(min-width:1121px){.game{gap:4px!important}.game-head h2{font-size:clamp(17px,2vh,25px)!important}.score-board{flex:1!important;min-height:0!important;grid-template-columns:minmax(0,.9fr) minmax(182px,1.22fr) minmax(0,.9fr)!important}.team{justify-content:flex-start!important;min-height:0!important;gap:2px!important}.team-picker{max-height:clamp(72px,15vh,155px)!important;flex:1 1 0!important}.team-name{line-height:1.1}.player-row{padding:1px 2px}.player-row button{min-height:22px!important;font-size:14px!important}.timer{padding:4px!important}.clock{font-size:clamp(34px,4.2vh,50px)!important}.timer-set{margin-top:2px!important}.scbuttons button{height:clamp(57px,8vh,94px)!important}.save-inside button{padding:5px!important}}
+@media(max-width:640px){.player-row{grid-template-columns:minmax(0,1fr) 22px 15px 22px}.player-row button{min-height:25px!important;font-size:14px!important}.team-name{font-size:12px!important}}
+
+/* V2.1: black rink / frost + flexible controls */
+:root{color-scheme:dark}
+html,body{background:#030509!important;color:#edfaff}
+body{background:radial-gradient(ellipse at 50% 9%,#4d899327 0,transparent 44%),radial-gradient(ellipse at 7% 90%,#c6eff316 0,transparent 34%),repeating-linear-gradient(115deg,#ffffff03 0 1px,transparent 1px 19px),#020407!important}
+.game,dialog{background:linear-gradient(148deg,#19262dbf,#03060ded 54%,#131f27ed)!important;border:1px solid #b5e9f269!important;box-shadow:inset 0 0 27px #c5f1ff1c,0 20px 45px #000b!important;backdrop-filter:blur(7px)}
+.game:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 0% 0%,#e6faff24,transparent 30%),radial-gradient(ellipse at 100% 100%,#9dd4ed1a,transparent 38%);border-radius:inherit}
+.team,.score-section,.timer,.setting-card{background:linear-gradient(135deg,#13252d9c,#020509cf)!important;border-color:#a6e7fd38!important;box-shadow:inset 0 0 15px #d9faff0d}
+.scbuttons{transition:opacity .2s}
+body.hide-field-scores .scbuttons{display:none!important}
+body.hide-field-scores .score-board{grid-template-columns:minmax(0,1fr) minmax(125px,.6fr) minmax(0,1fr)!important}
+body.hide-field-scores .team{padding:clamp(7px,1vw,16px)!important}
+body.hide-field-scores .team-picker{max-height:clamp(92px,19vh,190px)!important}
+body.hide-field-scores .player-row{gap:5px!important;padding:3px 4px!important}
+body.hide-field-scores .player-row button{min-height:clamp(26px,4.3vh,46px)!important;min-width:28px!important;font-size:clamp(17px,2.6vh,27px)!important}
+body.hide-field-scores .player-list{flex:1}
+body.hide-field-scores .score{font-size:clamp(30px,5vw,78px)!important}
+.stats-table th:hover{color:#fff; background:#294653}
+
+/* ========================= NHL V3: frosty icerink + match completion ========================= */
+body{background:
+ radial-gradient(ellipse 70% 22% at 50% 0%,rgba(139,212,239,.23),transparent 78%),
+ radial-gradient(ellipse 45% 45% at 92% 92%,rgba(124,201,222,.12),transparent 70%),
+ repeating-linear-gradient(121deg,rgba(255,255,255,.018) 0 1px,transparent 1px 37px),
+ #010306!important}
+.game{position:relative!important;isolation:isolate;border:1px solid rgba(175,230,246,.61)!important;
+ background:linear-gradient(149deg,#0b1621f5 0%,#08111af8 52%,#03050afa 100%)!important;
+ box-shadow:0 13px 45px #000c,inset 0 0 34px rgba(204,249,255,.09),inset 0 1px 1px #e6ffff63!important}
+.game::after{content:"";position:absolute;inset:2px;pointer-events:none;border-radius:inherit;z-index:0;
+ background:radial-gradient(ellipse at 8% 12%,#cdeafa24,transparent 40%),
+ repeating-linear-gradient(110deg,transparent 0 48px,#ecfbff07 49px 50px,transparent 51px 80px);
+ mask-image:linear-gradient(90deg,black,transparent 68%)}
+.game>*:not(.period-overlay):not(.victory-banner):not(.confetti){position:relative;z-index:1}
+.team,.score-section,.timer{background:linear-gradient(154deg,#142834c2,#050b15ef 55%,#04090fee)!important;
+ border:1px solid #b9edf338!important;box-shadow:inset 0 1px 2px #e4faff2b,inset 0 0 25px #ddfdff0c}
+.timer-preset{display:flex;align-items:center;justify-content:center;gap:8px;margin:5px 0 2px;font-size:12px;color:#dcf4fa}
+.timer-preset select{background:#071b28;color:#ffdd94;border:1px solid #6c8e9f;border-radius:8px;font:inherit;padding:6px 8px;min-height:34px;max-width:160px}
+.match-stage{display:block;text-align:center;font-size:clamp(10px,.8vw,12px);font-weight:800;letter-spacing:.10em;color:#b9eafa;margin:5px auto 0}
+.period-overlay{position:absolute!important;inset:0;z-index:20!important;display:flex;align-items:center;justify-content:center;
+ background:rgba(0,6,11,.80);backdrop-filter:blur(9px);padding:14px;border-radius:inherit}
+.period-overlay[hidden],.shootout-finish[hidden],.new-match[hidden]{display:none!important}
+.period-modal{background:linear-gradient(135deg,#192e39,#02070ddd 70%);border:2px solid #efc96d;
+ border-radius:20px;box-shadow:0 18px 44px #000e,0 0 45px #91e5ff23;padding:clamp(15px,2vw,26px);
+ text-align:center;width:min(460px,98%)}
+.period-modal h3{font-size:clamp(22px,2.1vw,30px);color:#ffe19a;margin:7px 0}
+.period-modal p{color:#cbe5f3;margin:0 0 18px}
+.period-kicker{letter-spacing:.14em;font-weight:900;color:#f8d475}
+.period-choices{display:grid;grid-template-columns:1fr;gap:9px}
+.period-choices button{padding:13px;font-weight:850;font-size:16px;border-color:#f2d488}
+.period-choices button:first-child{background:linear-gradient(#266ba2,#123754)}
+.period-choices button:nth-child(2){background:linear-gradient(#714395,#321c4e)}
+.period-choices button:last-child{background:linear-gradient(#3d6a48,#1d3c25)}
+.shootout-finish{background:linear-gradient(#8e2631,#55171c)!important;border-color:#eb7980!important;min-height:48px!important;color:#fff!important}
+.save-inside{display:flex!important;justify-content:center!important;align-items:center!important;gap:8px!important;flex-wrap:wrap!important}
+.victory-banner{position:absolute!important;top:17%;left:5%;right:5%;z-index:15!important;
+ text-align:center;opacity:0;transform:scale(.72);pointer-events:none;
+ font-size:clamp(22px,3vw,49px);font-weight:1000;letter-spacing:.04em;
+ background:linear-gradient(130deg,#fff3b9,#f4bb3d,#ffe5a0);
+ color:transparent;background-clip:text;-webkit-background-clip:text;
+ filter:drop-shadow(0 3px 3px #000) drop-shadow(0 0 12px #dba32f)}
+.victory-banner.victory-show{animation:showVictory 7.5s ease-out forwards}
+@keyframes showVictory{0%{opacity:0;transform:scale(.6) rotate(-4deg)}9%,72%{opacity:1;transform:scale(1.04) rotate(0)}98%,100%{opacity:0;transform:scale(1)}}
+.confetti{position:absolute!important;inset:0;z-index:14!important;overflow:hidden;pointer-events:none;border-radius:inherit}
+.confetti-piece{position:absolute;width:8px;height:13px;display:block;border-radius:1px;
+ animation:fallConfetti var(--duration,3s) ease-in var(--delay,0s) forwards;opacity:0}
+@keyframes fallConfetti{0%{transform:translate(0,-30px) rotate(0deg);opacity:0}10%{opacity:1}92%{opacity:1}100%{transform:translate(var(--drift,0px),80vh) rotate(var(--angle,360deg));opacity:0}}
+.goal-light.victory-light{animation:goalLamp .28s linear 29 alternate!important;box-shadow:0 0 24px #ff0000,0 0 45px #ff3131!important}
+@media(max-width:1120px){.period-modal{width:min(600px,96%)}.confetti-piece{height:10px}}
+@media(max-height:740px) and (min-width:1121px){.timer-preset{margin:1px 0}.timer-preset select{min-height:29px;padding:3px 5px}.match-stage{margin:1px}}
+
+</style></head><body><div class="wrap"><header class="top"><h1>🏒 NHL-kauden avajaiset 2026 🏒</h1><p>Kaksi kenttää · 12 valittavaa joukkuetta · peliaikaseuranta ja pelaajatilastot</p><div class="top-actions"><button id="settingsOpen">⚙ Asetukset</button><button id="historyOpen">📜 Otteluhistoria</button><button id="playersOpen">🏒 Pelaajatilastot</button><button id="fullscreen">⛶ Koko näyttö</button></div></header><main class="boards" id="boards"></main><p class="notice">Maalista kuuluu jääkiekkotorvi ja yleisöäänet. Ajastimen päättyessä kuuluu sireeni. Kaikki ääniasetusvalinnat löytyvät Asetukset-valikosta. Tulokset ja otteluhistoria tallentuvat tähän selaimeen.</p></div>
+<dialog id="playersDialog"><div class="dialog-top"><h2>🏒 Pelaajatilastot</h2><button data-close="playersDialog">✕ Sulje</button></div><p class="small">Tallennettujen otteluiden ja tällä hetkellä käynnissä olevien pelien pelaajamaalit. Voit viedä tiedot Exceliin.</p><div class="footer-buttons"><button id="exportPlayers">⬇ Vie pelaajatilastot Exceliin (.csv)</button></div><div id="playersStats"></div></dialog><dialog id="settings"><div class="dialog-top"><h2>⚙ Asetukset</h2><button data-close="settings">✕ Sulje</button></div><p class="small">Nimeä kentät ja ylläpidä 12 joukkueen rekisteriä. Valitse otteluiden joukkueet tulostaulussa logoja painamalla.</p><h3>Kenttien nimet</h3><div id="fieldNameSettings" class="fields"></div><h3>Uuden ottelun oletusajat</h3><div class="fields default-times"><label class="setting-card">Varsinaisen peliajan oletus (minuuttia)<input id="defaultRegulation" type="number" min="1" max="999" step="1" value="10"></label><label class="setting-card">Jatkoajan oletus (minuuttia)<input id="defaultOvertime" type="number" min="1" max="999" step="1" value="3"></label></div><p class="small">Uuden ottelun ajastin käyttää oletusaikaa. Jatkoaika-valinta lataa jatkoajan oletusajan automaattisesti, mutta sitä voi muuttaa ennen käynnistämistä.</p><h3>Ottelunäkymän painikkeet</h3><div class="options"><label><input type="checkbox" id="showFieldButtons"> Näytä kenttien omat +/− maalipainikkeet</label></div><h3>Joukkuerekisteri (12 joukkuetta)</h3><div id="settingFields" class="fields"></div><h3>Äänet</h3><div class="options"><label><input type="checkbox" id="enableHorn"> Maalitorvi</label><label><input type="checkbox" id="enableCrowd"> Yleisön juhlintä</label><label><input type="checkbox" id="enableSiren"> Ajan päättymissireeni</label><label><input type="checkbox" id="muteAll"> Mykistä kaikki</label></div><h3>Kenttäkohtaiset äänivalinnat</h3><div class="fields" id="soundProfiles"></div><div class="footer-buttons"><button id="testGoal">▶ Testaa maaliääni</button><button id="testSiren">▶ Testaa sireeni</button><button id="clearScores">Nollaa kaikki tulokset</button><button id="exportBackup">⬇ Vie varmuuskopio</button><button id="importBackup">⬆ Tuo varmuuskopio</button><input type="file" id="importInput" accept=".json,application/json" hidden></div><div id="settingMsg" class="message"></div></dialog>
+<dialog id="history"><div class="dialog-top"><h2>📜 Otteluhistoria</h2><button data-close="history">✕ Sulje</button></div><p class="small">Tallenna ottelu painamalla kentän Tallenna-painiketta. Voit muokata kirjattua lopputulosta tai poistaa merkinnän X-painikkeella.</p><div class="footer-buttons"><button id="exportField1">⬇ Kenttä 1 – Excel-taulukko (.csv)</button><button id="exportField2">⬇ Kenttä 2 – Excel-taulukko (.csv)</button></div><div id="historyItems"></div><div class="footer-buttons"><button id="clearHistory" class="danger">Tyhjennä historia</button></div></dialog>
+<script>
+(()=>{'use strict';
+const KEY='nhl-avajaiset-2026-tulostaulu-v2';const $=id=>document.getElementById(id);const copy=o=>JSON.parse(JSON.stringify(o));
+function defaultRegistry(){return Array.from({length:12},(_,i)=>({id:i+1,name:`Joukkue ${i+1}`,logo:'',players:Array.from({length:5},(_,j)=>`Pelaaja ${j+1}`)}))}
+function defaults(){return {registry:defaultRegistry(),games:[{name:'Kenttä 1',selection:[1,2],scores:[0,0],timers:[{start:600000,left:600000,playedMs:0}],playerGoals:[Array(5).fill(0),Array(5).fill(0)]},{name:'Kenttä 2',selection:[3,4],scores:[0,0],timers:[{start:600000,left:600000,playedMs:0}],playerGoals:[Array(5).fill(0),Array(5).fill(0)]}],sounds:{horn:true,crowd:true,siren:true,mute:false},showFieldButtons:true,matchDefaults:{regulationMs:600000,overtimeMs:180000},profiles:[{horn:1,siren:1},{horn:1,siren:1}],history:[]}}
+let state=defaults();try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved&&Array.isArray(saved.games)&&saved.games.length===2){state={...defaults(),...saved};if(!Array.isArray(saved.registry)||saved.registry.length!==12){state.registry=defaultRegistry();saved.games.forEach((g,gi)=>g.teams?.forEach((team,ti)=>{const index=gi*2+ti;state.registry[index].name=team.name||state.registry[index].name;state.registry[index].logo=team.logo||''}))}state.games=state.games.map((g,gi)=>({...g,name:g.name||`Kenttä ${gi+1}`,selection:Array.isArray(g.selection)?g.selection:[gi*2+1,gi*2+2],timers:[{...(g.timers?.[0]||{start:1200000,left:1200000}),playedMs:g.timers?.[0]?.playedMs||0,running:false}],playerGoals:Array.isArray(g.playerGoals)?g.playerGoals:[Array(5).fill(0),Array(5).fill(0)]}))}}catch{}
+if(typeof state.showFieldButtons!=='boolean')state.showFieldButtons=true;
+if(!Array.isArray(state.profiles))state.profiles=defaults().profiles;
+state.matchDefaults={...defaults().matchDefaults,...(state.matchDefaults||{})};
+state.games.forEach(g=>{
+  g.totalElapsedMs=Number.isFinite(g.totalElapsedMs)?Math.max(0,g.totalElapsedMs):Math.max(0,g.timers?.[0]?.playedMs||0);
+  g.totalRunning=false;delete g.totalStartedAt;
+  g.phase=['regulation','overtime','shootout'].includes(g.phase)?g.phase:'regulation';
+  g.resultMethod=['JA','RK'].includes(g.resultMethod)?g.resultMethod:'';
+  g.pendingEnd=!!g.pendingEnd;
+  g.finished=!!g.finished;
+  g.savedId=g.savedId||null;
+  if(!g.timers?.length)g.timers=[{start:state.matchDefaults.regulationMs,left:state.matchDefaults.regulationMs,running:false}];
+});
+const teamFor=id=>state.registry.find(t=>t.id===Number(id))||state.registry[0];
+const persist=()=>{try{const snapshot=copy(state);snapshot.games.forEach((g,gi)=>{g.totalElapsedMs=elapsedTotal(state.games[gi]);g.totalRunning=false;delete g.totalStartedAt;if(g.timers?.[0]?.running){g.timers[0].left=Math.max(0,g.timers[0].endsAt-Date.now());g.timers[0].running=false;delete g.timers[0].endsAt}});localStorage.setItem(KEY,JSON.stringify(snapshot));return true}catch(e){$('settingMsg').textContent='Tallennustila täynnä. Pienennä ladattuja logokuvia.';return false}};
+let audioCtx;function audio(){const C=window.AudioContext||window.webkitAudioContext;if(!C)return null;if(!audioCtx)audioCtx=new C();if(audioCtx.state==='suspended')audioCtx.resume().catch(()=>{});return audioCtx}
+function tone(f,start,dur,type='sawtooth',vol=.1,endF=f){const c=audio();if(!c)return;const o=c.createOscillator(),g=c.createGain();o.type=type;o.frequency.setValueAtTime(f,start);o.frequency.exponentialRampToValueAtTime(Math.max(20,endF),start+dur);g.gain.setValueAtTime(.0001,start);g.gain.exponentialRampToValueAtTime(vol,start+.03);g.gain.exponentialRampToValueAtTime(.0001,start+dur);o.connect(g).connect(c.destination);o.start(start);o.stop(start+dur+.03)}
+function crowd(start){const c=audio();if(!c)return;const len=Math.floor(c.sampleRate*2.5),buf=c.createBuffer(1,len,c.sampleRate),data=buf.getChannelData(0);for(let i=0;i<len;i++)data[i]=(Math.random()*2-1)*(.4+.6*Math.sin(i/len*Math.PI));const src=c.createBufferSource(),filter=c.createBiquadFilter(),gain=c.createGain();src.buffer=buf;filter.type='bandpass';filter.frequency.value=1050;filter.Q.value=.7;gain.gain.setValueAtTime(.0001,start);gain.gain.linearRampToValueAtTime(.16,start+.15);gain.gain.exponentialRampToValueAtTime(.0001,start+2.5);src.connect(filter).connect(gain).connect(c.destination);src.start(start);src.stop(start+2.55);[600,780,950].forEach((f,i)=>tone(f,start+.12*i,.8,'triangle',.022,f*1.08))}
+function goalSound(gi=0){if(state.sounds.mute)return;const c=audio();if(!c)return;const n=c.currentTime+.025;const profile=Number(state.profiles?.[gi]?.horn)||1;if(state.sounds.horn){[0,1.13].forEach((idx)=>{const start=n+idx;(profile===1?[145,290,435,580]:profile===2?[174,348,522,696]:[120,240,360,480]).forEach((freq,h)=>{const osc=c.createOscillator(),gain=c.createGain(),low=c.createBiquadFilter();osc.type=h===0?'sawtooth':'triangle';osc.frequency.setValueAtTime(freq,start);osc.frequency.linearRampToValueAtTime(freq*.994,start+.95);low.type='lowpass';low.frequency.value=1500;gain.gain.setValueAtTime(.0001,start);gain.gain.linearRampToValueAtTime([.11,.065,.037,.02][h],start+.045);gain.gain.setValueAtTime([.11,.065,.037,.02][h],start+.76);gain.gain.exponentialRampToValueAtTime(.0001,start+1.06);osc.connect(low).connect(gain).connect(c.destination);osc.start(start);osc.stop(start+1.08)})})}if(state.sounds.crowd)crowd(n+.18)}
+function sirenSound(gi=0){
+  if(state.sounds.mute||!state.sounds.siren)return;
+  const c=audio();if(!c)return;
+  const profile=Number(state.profiles?.[gi]?.siren)||1; const n=c.currentTime+.025, dur=profile===2?1.9:profile===3?3.5:2.65;
+  // Continuous, layered low-frequency arena end-of-period buzzer (not a rising/falling alarm).
+  const mix=c.createGain();mix.gain.setValueAtTime(.0001,n);
+  mix.gain.linearRampToValueAtTime(.7,n+.045);
+  mix.gain.setValueAtTime(.7,n+dur-.16);
+  mix.gain.exponentialRampToValueAtTime(.0001,n+dur);
+  const lowpass=c.createBiquadFilter();lowpass.type='lowpass';lowpass.frequency.value=1900;
+  mix.connect(lowpass).connect(c.destination);
+  (profile===1?[110,165,220,330,440]:profile===2?[148,222,296,444,592]:[95,142,190,285,380]).forEach((hz,i)=>{
+    const osc=c.createOscillator(),gain=c.createGain();
+    osc.type=i<2?'sawtooth':'triangle';
+    osc.frequency.setValueAtTime(hz,n);
+    osc.frequency.linearRampToValueAtTime(hz*.997,n+dur);
+    gain.gain.value=[.095,.073,.047,.028,.018][i];
+    osc.connect(gain).connect(mix);osc.start(n);osc.stop(n+dur+.02)
+  });
+}
+const elapsedText=ms=>{const v=Math.floor(Math.max(0,ms)/1000);return `${Math.floor(v/60)} min ${String(v%60).padStart(2,'0')} s`};
+const mmss=ms=>{const sec=Math.max(0,Math.ceil(ms/1000));return String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0')};
+// V3: elapsed MATCH duration counts calendar time while the timer is paused.
+// It stops only when the period runs out, the clock is reset or the match is completed.
+function elapsedTotal(g){return Math.max(0, Math.round((g.totalElapsedMs||0)+(g.totalRunning?Math.max(0,Date.now()-(g.totalStartedAt||Date.now())):0)))}
+function startTotal(g){if(!g.totalRunning){g.totalStartedAt=Date.now();g.totalRunning=true}}
+function stopTotal(g,at=Date.now()){
+  if(g.totalRunning){g.totalElapsedMs=(g.totalElapsedMs||0)+Math.max(0,at-(g.totalStartedAt||at));g.totalRunning=false;delete g.totalStartedAt}
+}
+function resetTotal(g){g.totalElapsedMs=0;g.totalRunning=false;delete g.totalStartedAt}
+function resetMatch(gi,resetTeam=false){
+  const g=state.games[gi];const base=state.matchDefaults.regulationMs;
+  g.scores=[0,0];g.playerGoals=[Array(5).fill(0),Array(5).fill(0)];
+  resetTotal(g);g.phase='regulation';g.resultMethod='';g.pendingEnd=false;g.finished=false;g.savedId=null;delete g.finalElapsedMs;
+  g.timers=[{start:base,left:base,playedMs:0,running:false}];
+  if($(`minutes-${gi}-0`)){$(`minutes-${gi}-0`).value=Math.floor(base/60000);$(`seconds-${gi}-0`).value=Math.floor(base%60000/1000);$(`preset-${gi}-0`).value=[180000,300000,600000].includes(base)?String(base):'custom'}
+}
+function winnerSide(g){return g.scores[0]===g.scores[1]?-1:(g.scores[0]>g.scores[1]?0:1)}
+const celebrationTimers=[null,null];
+function celebrateWinner(gi){
+  const g=state.games[gi],side=winnerSide(g),game=$(`game-${gi}`),box=$(`victory-${gi}`),confetti=$(`confetti-${gi}`);
+  if(!game||!box||!confetti)return;
+  if(celebrationTimers[gi])clearTimeout(celebrationTimers[gi]);
+  const team=side>=0?teamFor(g.selection[side]).name:'Tasapeli';
+  box.textContent=side>=0?`🏆 ${team} — VOITTO! 🏆`:'🏒 TASAPELI';
+  box.classList.add('victory-show');confetti.replaceChildren();
+  if(side>=0){
+    const light=$(`goal-light-${gi}-${side}`);
+    light?.classList.remove('goal-active');void light?.offsetWidth;light?.classList.add('victory-light');
+    for(let k=0;k<50;k++){
+      const piece=document.createElement('span');piece.className='confetti-piece';
+      piece.style.left=(Math.random()*100)+'%';piece.style.top='-15px';
+      piece.style.setProperty('--delay',(Math.random()*1.4)+'s');
+      piece.style.setProperty('--duration',(2+Math.random()*2)+'s');
+      piece.style.setProperty('--drift',(-90+Math.random()*180)+'px');
+      piece.style.setProperty('--angle',(Math.random()*800-400)+'deg');
+      piece.style.background=['#ffd76a','#e83434','#ffffff','#80e9fb','#f5a623'][k%5];
+      confetti.append(piece);
+    }
+  }
+  celebrationTimers[gi]=setTimeout(()=>{box.classList.remove('victory-show');confetti.replaceChildren();
+    if(side>=0)$(`goal-light-${gi}-${side}`)?.classList.remove('victory-light');
+  },8000);
+}
+function renderGameFlow(gi){
+  const g=state.games[gi],overlay=$(`periodEnd-${gi}`),endBtn=$(`shootoutEnd-${gi}`),newBtn=$(`newMatch-${gi}`),stage=$(`match-stage-${gi}`);
+  if(!overlay)return;
+  overlay.hidden=!g.pendingEnd||g.finished;
+  endBtn.hidden=g.phase!=='shootout'||g.finished;newBtn.hidden=!g.finished;
+  stage.textContent=g.finished?'Ottelu päättynyt':g.phase==='shootout'?'RANKKARIKISA':g.phase==='overtime'?'JATKOAIKA · JA':'VAR SINAINEN PELIAIKA';
+  if(g.phase==='regulation')stage.textContent='VARSINAINEN PELIAIKA';
+  const save=$(`saveGame${gi+1}`);
+  if(save){save.disabled=!!g.savedId&&g.finished;save.textContent=g.savedId&&g.finished?'✓ Ottelu tallennettu historiaan':'🏆 Tallenna tulos historiaan'}
+}
+function finishGame(gi){
+  const g=state.games[gi];if(g.finished)return;
+  const t=g.timers[0];if(t.running){t.left=Math.max(0,t.endsAt-Date.now());t.running=false;delete t.endsAt;delete t.lastTickAt}
+  stopTotal(g);g.finalElapsedMs=g.totalElapsedMs;resetTotal(g);g.pendingEnd=false;g.finished=true;
+  // Keep winning scoreboard visible until the next team's logo is selected.
+  persist();tick();renderGameFlow(gi);celebrateWinner(gi);
+  if(confirm(`Ottelu päättyi: ${teamFor(g.selection[0]).name} ${g.scores[0]}–${g.scores[1]} ${teamFor(g.selection[1]).name}.\n\nTallennetaanko ottelun tulos historiaan?`)){
+    saveHistory(gi,{preserveBoard:true,openHistory:false});
+  }
+}
+function decidePeriodEnd(gi,choice){
+  const g=state.games[gi],t=g.timers[0];if(!g.pendingEnd)return;
+  if(choice==='finish'){finishGame(gi);return}
+  g.pendingEnd=false;
+  if(choice==='overtime'){
+    g.phase='overtime';g.resultMethod='JA';
+    t.start=state.matchDefaults.overtimeMs;t.left=t.start;t.running=false;delete t.endsAt;delete t.lastTickAt;
+    $(`minutes-${gi}-0`).value=Math.floor(t.start/60000);$(`seconds-${gi}-0`).value=Math.floor(t.start%60000/1000);
+    $(`preset-${gi}-0`).value=[180000,300000,600000].includes(t.start)?String(t.start):'custom';
+  }else if(choice==='shootout'){
+    g.phase='shootout';g.resultMethod='RK';t.running=false;t.left=0;
+    startTotal(g); // Match remains ongoing throughout the penalty shootout.
+  }
+  persist();tick();renderGameFlow(gi);
+}
+function build(){
+  document.body.classList.toggle('hide-field-scores',!state.showFieldButtons);
+  const root=$('boards');root.replaceChildren();
+  state.games.forEach((g,gi)=>{
+    const card=document.createElement('section');card.className='game';card.id=`game-${gi}`;
+    let html=`<div class="game-head"><h2>🏒 <span id="field-label-${gi}"></span></h2><span class="rink-label" id="match-count-${gi}"></span></div><div class="score-board">`;
+    for(let ti=0;ti<2;ti++){
+      html+=`<div class="team"><span class="goal-light" id="goal-light-${gi}-${ti}" aria-hidden="true"></span><button type="button" class="logo team-picker" data-select="${gi},${ti}" title="Valitse joukkue"><span id="logo-${gi}-${ti}"></span><span class="select-hint">▾ Valitse</span></button><select class="team-select" id="teamSelect-${gi}-${ti}" aria-label="Valitse joukkue"></select><div class="team-name" id="team-${gi}-${ti}"></div><div class="player-list" id="players-${gi}-${ti}"></div></div>`;
+      if(ti===0)html+=`<div class="score-section"><div class="score"><span id="score-${gi}-0">0</span> : <span id="score-${gi}-1">0</span></div><div class="scbuttons"><button class="plus" data-score="${gi},0,1" aria-label="Kenttä ${gi+1}, koti lisää maali">+</button><button class="plus" data-score="${gi},1,1" aria-label="Kenttä ${gi+1}, vieras lisää maali">+</button><button class="minus" data-score="${gi},0,-1" aria-label="Kenttä ${gi+1}, koti vähennä maali">−</button><button class="minus" data-score="${gi},1,-1" aria-label="Kenttä ${gi+1}, vieras vähennä maali">−</button></div><span class="match-stage" id="match-stage-${gi}"></span></div>`;
+    }
+    html+='</div><div class="timer-section">';
+    html+=`<div class="timer"><div class="timer-title">⏱ Peliaika</div><div class="clock" id="clock-${gi}-0">00:00</div><div class="status" id="timerStatus-${gi}-0"></div><div class="played-time">Kokonaispeliaika: <strong id="played-${gi}-0">0 min 00 s</strong></div><div class="timer-actions"><button class="run" data-timer="${gi},0,toggle" id="timerBtn-${gi}-0">▶ Käynnistä</button><button data-timer="${gi},0,reset">↺ Nollaa</button></div><div class="timer-preset"><label for="preset-${gi}-0">Aikavalinta</label><select id="preset-${gi}-0" data-preset="${gi}"><option value="180000">3 min</option><option value="300000">5 min</option><option value="600000">10 min</option><option value="custom">Vapaa peliaika</option></select></div><div class="timer-set"><input type="number" min="0" max="999" id="minutes-${gi}-0" value="10" aria-label="Minuutit"><span>min</span><input type="number" min="0" max="59" id="seconds-${gi}-0" value="0" aria-label="Sekunnit"><span>s</span><button data-timer="${gi},0,set">Aseta aika</button></div></div>`;
+    html+=`</div><div class="save-inside"><button type="button" class="shootout-finish" id="shootoutEnd-${gi}" data-end-game="${gi}" hidden>🏁 Lopeta ottelu (rankkarikisa)</button><button type="button" class="new-match" id="newMatch-${gi}" data-new-game="${gi}" hidden>↻ Uusi ottelu</button><button type="button" id="saveGame${gi+1}" data-save-game="${gi}">🏆 Tallenna tulos historiaan</button></div>`;
+    html+=`<div class="victory-banner" id="victory-${gi}" aria-live="polite"></div><div class="confetti" id="confetti-${gi}" aria-hidden="true"></div>`;
+    html+=`<div class="period-overlay" id="periodEnd-${gi}" hidden><div class="period-modal"><div class="period-kicker">⏱ PELIAIKA PÄÄTTYI</div><h3>Jatketaanko ottelua?</h3><p>Valitse kentän seuraava vaihe.</p><div class="period-choices"><button data-decision="${gi},overtime">🏒 Jatkoaika</button><button data-decision="${gi},shootout">🥅 Rankkarikisa</button><button data-decision="${gi},finish">🏁 Lopeta ottelu</button></div></div></div>`;
+    card.innerHTML=html;root.append(card);
+  });
+  root.onclick=e=>{
+    const decision=e.target.closest('[data-decision]');if(decision){const [gi,choice]=decision.dataset.decision.split(',');decidePeriodEnd(Number(gi),choice);return}
+    const end=e.target.closest('[data-end-game]');if(end){finishGame(Number(end.dataset.endGame));return}
+    const next=e.target.closest('[data-new-game]');if(next){resetMatch(Number(next.dataset.newGame));persist();updateScores();tick();return}
+    const player=e.target.closest('[data-player-goal]');if(player){
+      const [gi,side,pi,delta]=player.dataset.playerGoal.split(',').map(Number);const g=state.games[gi];
+      if(g.finished||g.pendingEnd)return;
+      const old=g.playerGoals[side][pi]||0;const value=Math.max(0,old+delta);
+      if(value!==old){g.playerGoals[side][pi]=value;g.scores[side]=Math.max(0,g.scores[side]+value-old);if(delta>0)notifyGoal(gi,side);persist();updateScores()}return
+    }
+    const select=e.target.closest('[data-select]');if(select){
+      const [gi,ti]=select.dataset.select.split(',').map(Number);const picker=$(`teamSelect-${gi}-${ti}`);
+      picker.classList.add('picker-open');picker.focus();try{picker.showPicker()}catch{picker.size=12}return
+    }
+    const save=e.target.closest('[data-save-game]');if(save){saveHistory(Number(save.dataset.saveGame));return}
+    const score=e.target.closest('[data-score]');if(score){
+      const [gi,ti,delta]=score.dataset.score.split(',').map(Number);const g=state.games[gi];
+      if(g.finished||g.pendingEnd)return;
+      g.scores[ti]=Math.max(0,g.scores[ti]+delta);if(delta>0)notifyGoal(gi,ti);persist();updateScores();return
+    }
+    const btn=e.target.closest('[data-timer]');if(btn){const [gi,ti,action]=btn.dataset.timer.split(',');timerAction(+gi,+ti,action)}
+  };
+  root.onchange=e=>{
+    const preset=e.target.closest('[data-preset]');if(preset){
+      const gi=Number(preset.dataset.preset);if(preset.value==='custom'){$(`minutes-${gi}-0`).focus()}
+      else timerAction(gi,0,'preset');return
+    }
+    const input=e.target.closest('.team-select');if(input){
+      const [gi,ti]=input.id.replace('teamSelect-','').split('-').map(Number);const g=state.games[gi];
+      const id=Number(input.value);
+      if(g.selection[ti]!==id){
+        if(g.finished)resetMatch(gi);
+        g.selection[ti]=id;g.playerGoals[ti]=Array(5).fill(0);persist();updateScores();tick();
+      }
+      input.classList.remove('picker-open');input.removeAttribute('size');
+    }
+  };
+  root.addEventListener('focusout',e=>{if(e.target.matches('.team-select'))setTimeout(()=>{e.target.classList.remove('picker-open');e.target.removeAttribute('size')},180)});
+  updateScores();state.games.forEach((g,gi)=>{
+    const t=g.timers[0],secs=Math.floor(t.start/1000);
+    $(`minutes-${gi}-0`).value=Math.floor(secs/60);$(`seconds-${gi}-0`).value=secs%60;
+    $(`preset-${gi}-0`).value=[180000,300000,600000].includes(t.start)?String(t.start):'custom';
+  });tick();
+}
+function notifyGoal(gi,side){goalSound(gi);const light=$(`goal-light-${gi}-${side}`);light.classList.remove('goal-active');void light.offsetWidth;light.classList.add('goal-active');setTimeout(()=>light.classList.remove('goal-active'),2600)}
+function gameCount(gi){return state.history.filter(h=>h.field===gi+1).length}
+function resequenceHistory(){for(const field of [1,2]){state.history.filter(h=>h.field===field).sort((a,b)=>new Date(a.date)-new Date(b.date)).forEach((r,i)=>{r.sequence=i+1})}}
+function updateScores(){document.body.classList.toggle('hide-field-scores',!state.showFieldButtons);state.games.forEach((g,gi)=>{if($(`field-label-${gi}`))$(`field-label-${gi}`).textContent=g.name||`Kenttä ${gi+1}`;$(`match-count-${gi}`).textContent=`PELATTU ${gameCount(gi)} · OTTELU ${gameCount(gi)+1}`;g.scores.forEach((v,ti)=>{$(`score-${gi}-${ti}`).textContent=v});g.selection.forEach((id,ti)=>{const team=teamFor(id);$(`team-${gi}-${ti}`).textContent=team.name||`Joukkue ${id}`;const box=$(`logo-${gi}-${ti}`);box.replaceChildren();if(team.logo){const img=document.createElement('img');img.src=team.logo;img.alt=team.name;box.append(img)}else box.textContent='🏒';const picker=$(`teamSelect-${gi}-${ti}`);picker.replaceChildren();state.registry.forEach(t=>{const opt=document.createElement('option');opt.value=t.id;opt.textContent=t.name||`Joukkue ${t.id}`;picker.append(opt)});picker.value=id;const players=$(`players-${gi}-${ti}`);players.replaceChildren();(team.players||[]).slice(0,5).forEach((player,pi)=>{const row=document.createElement('div');row.className='player-row';const label=document.createElement('span');label.className='player-label';label.textContent=player||`Pelaaja ${pi+1}`;label.title=label.textContent;const minus=document.createElement('button');minus.textContent='−';minus.dataset.playerGoal=`${gi},${ti},${pi},-1`;minus.setAttribute('aria-label',`Poista maali pelaajalta ${label.textContent}`);const count=document.createElement('b');count.textContent=g.playerGoals?.[ti]?.[pi]||0;const plus=document.createElement('button');plus.textContent='+';plus.dataset.playerGoal=`${gi},${ti},${pi},1`;plus.setAttribute('aria-label',`Lisää maali pelaajalle ${label.textContent}`);row.append(label,minus,count,plus);players.append(row)})});renderGameFlow(gi)})}
+function timerAction(gi,ti,action){
+  const g=state.games[gi],t=g.timers[ti];if(g.finished)return;
+  if(action==='toggle'){
+    if(g.pendingEnd||g.phase==='shootout')return;
+    if(t.running){
+      t.left=Math.max(0,t.endsAt-Date.now());t.running=false;delete t.endsAt;
+      // V3 crucial: total elapsed CLOCK still runs, even when timer is paused.
+    }else if(t.left>0){
+      t.endsAt=Date.now()+t.left;t.running=true;startTotal(g);
+    }
+  }
+  if(action==='reset'){
+    t.running=false;t.left=t.start;t.playedMs=0;delete t.endsAt;delete t.lastTickAt;
+    resetTotal(g);g.pendingEnd=false;
+  }
+  if(action==='set'||action==='preset'){
+    let ms;
+    if(action==='preset')ms=Number($(`preset-${gi}-${ti}`).value);
+    else{
+      const m=Math.min(999,Math.max(0,Number($(`minutes-${gi}-${ti}`).value)||0));
+      const sec=Math.min(59,Math.max(0,Number($(`seconds-${gi}-${ti}`).value)||0));
+      ms=(m*60+sec)*1000;
+    }
+    if(!(ms>0))return;
+    t.start=ms;t.left=ms;t.running=false;delete t.endsAt;delete t.lastTickAt;
+    $(`minutes-${gi}-${ti}`).value=Math.floor(ms/60000);
+    $(`seconds-${gi}-${ti}`).value=Math.floor(ms%60000/1000);
+    $(`preset-${gi}-${ti}`).value=[180000,300000,600000].includes(ms)?String(ms):'custom';
+    // Setting a duration does NOT reset total match duration.
+  }
+  persist();tick();
+}
+function tick(){
+  let changed=false;
+  state.games.forEach((g,gi)=>{
+    const t=g.timers[0];
+    if(t.running){
+      const left=Math.max(0,t.endsAt-Date.now());t.left=left;
+      if(left===0){
+        stopTotal(g,t.endsAt);t.running=false;delete t.endsAt;delete t.lastTickAt;
+        g.pendingEnd=true;sirenSound(gi);changed=true;
+        renderGameFlow(gi);
+      }
+    }
+    $(`clock-${gi}-0`).textContent=mmss(t.left);
+    $(`played-${gi}-0`).textContent=elapsedText(elapsedTotal(g));
+    $(`timerBtn-${gi}-0`).textContent=t.running?'⏸ Pysäytä':'▶ Käynnistä';
+    $(`timerBtn-${gi}-0`).disabled=!!g.pendingEnd||g.finished||g.phase==='shootout';
+    $(`timerStatus-${gi}-0`).textContent=g.finished?'Ottelu päättynyt':g.pendingEnd?'Aika päättynyt – valitse jatko':g.phase==='shootout'?'Rankkarikisa käynnissä':t.running?'Käynnissä':g.totalRunning?'Pysäytetty · kokonaispeliaika jatkuu':'Valmis / pysäytetty';
+  });
+  if(changed)persist();
+}
+setInterval(tick,180);
+setInterval(()=>{if(state.games.some(g=>g.timers[0].running||g.totalRunning))persist()},4000);
+document.addEventListener('visibilitychange',tick);
+function settingsRender(){const fields=$('fieldNameSettings');fields.replaceChildren();state.games.forEach((g,gi)=>{const card=document.createElement('div');card.className='setting-card';const lbl=document.createElement('label');lbl.textContent=`Kenttä ${gi+1} · näytettävä nimi`;const input=document.createElement('input');input.value=g.name;input.maxLength=80;input.oninput=()=>{g.name=input.value;persist();updateScores()};card.append(lbl,input);fields.append(card)});const root=$('settingFields');root.replaceChildren();state.registry.forEach((team,i)=>{const item=document.createElement('div');item.className='setting-card';const title=document.createElement('h4');title.textContent=`Joukkue ${i+1}`;const label=document.createElement('label');label.textContent='Joukkueen nimi';const name=document.createElement('input');name.type='text';name.maxLength=90;name.value=team.name;name.oninput=()=>{team.name=name.value;persist();updateScores()};const prev=document.createElement('img');prev.alt='Joukkueen logo';prev.hidden=!team.logo;if(team.logo)prev.src=team.logo;const file=document.createElement('input');file.type='file';file.accept='image/png,image/jpeg,image/webp,image/gif';file.onchange=()=>{const f=file.files[0];if(!f)return;if(f.size>2*1024*1024){$('settingMsg').textContent='Valitse alle 2 Mt:n kuvatiedosto.';return}const reader=new FileReader();reader.onload=()=>{team.logo=reader.result;if(persist()){prev.src=team.logo;prev.hidden=false;updateScores()}};reader.readAsDataURL(f)};const del=document.createElement('button');del.type='button';del.textContent='Poista logo';del.onclick=()=>{team.logo='';prev.hidden=true;prev.removeAttribute('src');persist();updateScores()};item.append(title,label,name,prev,file,del);const plabel=document.createElement('label');plabel.textContent='Pelaajat (5)';item.append(plabel);team.players=Array.from({length:5},(_,j)=>team.players?.[j]||`Pelaaja ${j+1}`);team.players.forEach((player,j)=>{const row=document.createElement('input');row.type='text';row.maxLength=90;row.value=player;row.placeholder=`Pelaaja ${j+1}`;row.setAttribute('aria-label',`${team.name} pelaaja ${j+1}`);row.oninput=()=>{team.players[j]=row.value;persist()};item.append(row)});root.append(item)});for(const [id,key] of [['enableHorn','horn'],['enableCrowd','crowd'],['enableSiren','siren'],['muteAll','mute']])$(id).checked=state.sounds[key];$('showFieldButtons').checked=state.showFieldButtons;$('defaultRegulation').value=Math.round(state.matchDefaults.regulationMs/60000);$('defaultOvertime').value=Math.round(state.matchDefaults.overtimeMs/60000);
+const prof=$('soundProfiles');prof.replaceChildren();state.profiles.forEach((profile,gi)=>{const block=document.createElement('div');block.className='setting-card';const h=document.createElement('h4');h.textContent=state.games[gi].name;block.append(h);for(const kind of ['horn','siren']){const label=document.createElement('label');label.textContent=kind==='horn'?'Maalitorvi':'Loppusummeri';const sel=document.createElement('select');for(let n=1;n<=3;n++){const o=document.createElement('option');o.value=n;o.textContent=(kind==='horn'?['Perinteinen hallitorvi','Korkea kaksiosainen torvi','Matala pitkä torvi']:['Areenasummeri','Terävä loppusummeri','Syvä pitkä summeri'])[n-1];sel.append(o)}sel.value=profile[kind]||1;sel.onchange=()=>{profile[kind]=Number(sel.value);persist()};block.append(label,sel)}const preview=document.createElement('button');preview.textContent='▶ Kokeile kentän ääniä';preview.onclick=()=>{goalSound(gi);setTimeout(()=>sirenSound(gi),2400)};block.append(preview);prof.append(block)})}
+for(const [id,key] of [['defaultRegulation','regulationMs'],['defaultOvertime','overtimeMs']]){
+  $(id).addEventListener('change',()=>{
+    const mins=Math.max(1,Math.min(999,Math.round(Number($(id).value)||1)));
+    state.matchDefaults[key]=mins*60000;$(id).value=mins;
+    // Apply changed default only to a fresh, untouched field.
+    if(key==='regulationMs')state.games.forEach((g,gi)=>{
+      if(!g.finished && !g.totalRunning && (g.totalElapsedMs||0)===0 && g.phase==='regulation' && !g.scores.some(Boolean)){
+        const t=g.timers[0];if(!t.running){t.start=mins*60000;t.left=t.start;
+          $(`minutes-${gi}-0`).value=mins;$(`seconds-${gi}-0`).value=0;
+          $(`preset-${gi}-0`).value=[3,5,10].includes(mins)?String(mins*60000):'custom';}
+      }
+    });persist();tick();
+  });
+}
+$('showFieldButtons').addEventListener('change',()=>{state.showFieldButtons=$('showFieldButtons').checked;persist();updateScores()});
+for(const [id,key] of [['enableHorn','horn'],['enableCrowd','crowd'],['enableSiren','siren'],['muteAll','mute']])$(id).addEventListener('change',()=>{state.sounds[key]=$(id).checked;persist()});
+function saveHistory(gi,options={}){
+  const g=state.games[gi];if(g.savedId&&g.finished)return;
+  tick();const sequence=gameCount(gi)+1;
+  const rec={id:crypto.randomUUID?.()||String(Date.now()+Math.random()),sequence,
+    date:new Date().toISOString(),field:gi+1,names:g.selection.map(id=>teamFor(id).name),
+    selection:[...g.selection],playerNames:g.selection.map(id=>[...teamFor(id).players]),
+    playerGoals:copy(g.playerGoals),fieldName:g.name,scores:[...g.scores],
+    playedMs:(g.finished&&Number.isFinite(g.finalElapsedMs)?g.finalElapsedMs:elapsedTotal(g)),resultMethod:g.resultMethod||''};
+  state.history.unshift(rec);
+  if(options.preserveBoard){g.savedId=rec.id}
+  else resetMatch(gi);
+  resequenceHistory();persist();updateScores();tick();
+  if(options.openHistory!==false){$('history').showModal();historyRender()}
+}
+function historyRender(){const root=$('historyItems');root.replaceChildren();if(!state.history.length){root.textContent='Ei vielä tallennettuja otteluita.';return}for(const rec of state.history){const row=document.createElement('div');row.className='history-row';const title=document.createElement('div');const dt=new Date(rec.date).toLocaleString('fi-FI');const strong=document.createElement('strong');strong.textContent=`${rec.fieldName||`Kenttä ${rec.field}`} · Ottelu #${rec.sequence||'?'} · ${dt}`;const names=document.createElement('div');names.className='small';names.textContent=`${rec.names[0]} – ${rec.names[1]} · Kokonaispeliaika ${elapsedText(rec.playedMs||0)}${rec.resultMethod?' · '+rec.resultMethod:''}`;title.append(strong,names);const [a,b]=rec.scores.map((score,i)=>{const input=document.createElement('input');input.type='number';input.min='0';input.max='9999';input.value=score;input.setAttribute('aria-label',`Joukkue ${i+1} lopputulos`);input.addEventListener('change',()=>{rec.scores[i]=Math.max(0,Math.floor(+input.value||0));input.value=rec.scores[i];persist()});return input});const del=document.createElement('button');del.textContent='✕';del.className='danger';del.title='Poista historiasta';del.onclick=()=>{{state.history=state.history.filter(h=>h!==rec);resequenceHistory();persist();historyRender();updateScores()}};row.append(title,a,b,del);root.append(row)}}
+
+function exportHistoryCsv(field){const rows=[['Kenttä','Ottelunumero','Päivämäärä','Kotijoukkue','Vierasjoukkue','Kotimaalit','Vierasmaalit','Todellinen peliaika (min)','Todellinen peliaika (sek)','Päättymistapa (JA/RK)']];state.history.filter(h=>h.field===field).forEach(h=>rows.push([h.fieldName||`Kenttä ${field}`,h.sequence||'',new Date(h.date).toLocaleString('fi-FI'),h.names?.[0]||'',h.names?.[1]||'',h.scores?.[0]??0,h.scores?.[1]??0,((h.playedMs||0)/60000).toFixed(2).replace('.',','),Math.floor((h.playedMs||0)/1000),h.resultMethod||'']));const cell=x=>'"'+String(x).replace(/"/g,'""')+'"';const csv='\uFEFFsep=;\r\n'+rows.map(r=>r.map(cell).join(';')).join('\r\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`NHL_2026_kentta_${field}_otteluhistoria.csv`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function playerRecords(){const out=[];for(const t of state.registry){for(let pi=0;pi<5;pi++){let historical=0,current=0;for(const rec of state.history){(rec.selection||[]).forEach((id,side)=>{if(Number(id)===t.id)historical+=Number(rec.playerGoals?.[side]?.[pi]||0)})}for(const g of state.games){g.selection.forEach((id,side)=>{if(Number(id)===t.id)current+=Number(g.playerGoals?.[side]?.[pi]||0)})}out.push({team:t.name,player:t.players?.[pi]||`Pelaaja ${pi+1}`,historical,current,total:historical+current})}}return out}
+let statSort={key:'total',desc:true}; function renderPlayersStats(){const root=$('playersStats');root.replaceChildren();const table=document.createElement('table');table.className='stats-table';table.innerHTML='<thead><tr><th data-sort="team">Joukkue ↕</th><th data-sort="player">Pelaaja ↕</th><th data-sort="historical">Historiassa ↕</th><th data-sort="current">Nykyisessä pelissä ↕</th><th data-sort="total">Yhteensä ↕</th></tr></thead>';table.querySelectorAll('th').forEach(th=>{th.tabIndex=0;th.style.cursor='pointer';th.onclick=()=>{const k=th.dataset.sort;statSort=statSort.key===k?{key:k,desc:!statSort.desc}:{key:k,desc:!['team','player'].includes(k)};renderPlayersStats()};th.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();th.click()}}});const body=document.createElement('tbody');const records=playerRecords().sort((a,b)=>{const k=statSort.key;const diff=typeof a[k]==='number'?a[k]-b[k]:String(a[k]).localeCompare(String(b[k]),'fi');return (statSort.desc?-diff:diff)||b.total-a.total});for(const p of records){const tr=document.createElement('tr');for(const v of [p.team,p.player,p.historical,p.current,p.total]){const td=document.createElement('td');td.textContent=v;tr.append(td)}body.append(tr)}table.append(body);root.append(table)}
+function downloadCsv(rows,name){const cell=x=>'"'+String(x).replace(/"/g,'""')+'"';const csv='\uFEFFsep=;\r\n'+rows.map(r=>r.map(cell).join(';')).join('\r\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1200)}
+function exportPlayersCsv(){const rows=[['Joukkue','Pelaaja','Otteluhistorian maalit','Käynnissä olevien otteluiden maalit','Yhteensä']];for(const p of playerRecords())rows.push([p.team,p.player,p.historical,p.current,p.total]);downloadCsv(rows,'NHL_2026_pelaajatilastot.csv')}
+$('exportField1').onclick=()=>exportHistoryCsv(1);$('exportField2').onclick=()=>exportHistoryCsv(2);
+$('settingsOpen').onclick=()=>{settingsRender();$('settings').showModal()};$('playersOpen').onclick=()=>{statSort={key:'total',desc:true};renderPlayersStats();$('playersDialog').showModal()};$('exportPlayers').onclick=exportPlayersCsv;
+$('historyOpen').onclick=()=>{historyRender();$('history').showModal()};document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>$(b.dataset.close).close());$('testGoal').onclick=goalSound;$('testSiren').onclick=sirenSound;
+$('clearScores').onclick=()=>{if(confirm('Nollataanko molempien kenttien tulokset?')){state.games.forEach((g,gi)=>resetMatch(gi));persist();updateScores()}};$('clearHistory').onclick=()=>{if(confirm('Poistetaanko koko otteluhistoria?')){state.history=[];persist();historyRender();updateScores()}};
+$('fullscreen').onclick=()=>{if(document.fullscreenElement)document.exitFullscreen();else document.documentElement.requestFullscreen?.()};
+function backupDownload(data,tag){const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=`NHL_avajaiset_2026_varmuuskopio_${tag}.json`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500)}
+$('exportBackup').onclick=()=>{const choice=prompt('Valitse varmuuskopion sisältö:\n1 = Kaikki asetukset, joukkueet, tulokset ja historia\n2 = Vain kenttä- ja joukkueasetukset (ei tuloksia)\n3 = Vain ottelutulokset ja historia (ei asetuksia)\nKirjoita 1, 2 tai 3:','1');if(!['1','2','3'].includes(choice))return;let data;if(choice==='1'){data={...copy(state),backupType:'all'}}else if(choice==='2'){data={backupType:'settings',registry:copy(state.registry),games:state.games.map(g=>({name:g.name,selection:copy(g.selection),timers:[{start:g.timers[0].start,left:g.timers[0].start,playedMs:0,running:false}]})),sounds:copy(state.sounds),profiles:copy(state.profiles),showFieldButtons:state.showFieldButtons,matchDefaults:copy(state.matchDefaults)}}else{data={backupType:'results',history:copy(state.history),games:state.games.map(g=>({scores:copy(g.scores),playerGoals:copy(g.playerGoals),playedMs:g.timers[0].playedMs,left:g.timers[0].left}))}}backupDownload(data,['','kaikki','asetukset','tulokset'][Number(choice)])};
+$('importBackup').onclick=()=>$('importInput').click();
+$('importInput').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d||typeof d!=='object'||!['settings','results','all',undefined].includes(d.backupType))throw Error('Virheellinen varmuuskopio');const next=copy(state);if(d.backupType!=='results'){if(Array.isArray(d.registry)&&d.registry.length===12)next.registry=d.registry;if(Array.isArray(d.games)&&d.games.length===2)d.games.forEach((g,i)=>{next.games[i].name=g.name||next.games[i].name;if(Array.isArray(g.selection))next.games[i].selection=g.selection;if(g.timers?.[0]?.start>0)next.games[i].timers[0].start=g.timers[0].start});if(d.sounds)next.sounds={...next.sounds,...d.sounds};if(d.matchDefaults)next.matchDefaults={...next.matchDefaults,...d.matchDefaults};if(Array.isArray(d.profiles)&&d.profiles.length===2)next.profiles=d.profiles;if(typeof d.showFieldButtons==='boolean')next.showFieldButtons=d.showFieldButtons}if(d.backupType!=='settings'&&Array.isArray(d.games)&&d.games.length===2)d.games.forEach((g,i)=>{if(Array.isArray(g.scores))next.games[i].scores=g.scores;if(Array.isArray(g.playerGoals))next.games[i].playerGoals=g.playerGoals;if(Number.isFinite(g.playedMs))next.games[i].timers[0].playedMs=g.playedMs;if(Number.isFinite(g.left))next.games[i].timers[0].left=g.left});const action=prompt('Miten otteluhistoria käsitellään?\n1 = Tuo/korvaa varmuuskopion historialla\n2 = Säilytä nykyinen historia\n3 = Tyhjennä historia','1');if(!['1','2','3'].includes(action))return;if(action==='1'){if(!Array.isArray(d.history))throw Error('Varmuuskopiossa ei ole otteluhistoriaa');next.history=d.history}else if(action==='3')next.history=[];state=next;state.games.forEach((g,i)=>{g.timers=[{...g.timers[0],running:false}];delete g.timers[0].endsAt;delete g.timers[0].lastTickAt;g.totalRunning=false;delete g.totalStartedAt;g.totalElapsedMs=Number.isFinite(g.totalElapsedMs)?g.totalElapsedMs:(g.timers[0].playedMs||0);g.phase=g.phase||'regulation';g.pendingEnd=!!g.pendingEnd;g.finished=!!g.finished;g.playerGoals=Array.isArray(g.playerGoals)?g.playerGoals:[Array(5).fill(0),Array(5).fill(0)]});resequenceHistory();persist();build();settingsRender();$('settingMsg').textContent='Varmuuskopio tuotu onnistuneesti.'}catch(err){$('settingMsg').textContent='Tuonti epäonnistui: '+err.message}e.target.value='' });
+
+build();
+})();
+</script></body></html>
